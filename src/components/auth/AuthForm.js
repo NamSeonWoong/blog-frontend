@@ -97,8 +97,8 @@ const AuthForm = ({ type, form, onChange, onSubmit, error }) => {
             name="passwordConfirm"
             placeholder="비밀번호 확인"
             type="password"
-            onChange={onChange}
-            value={form.passwordConfirm}
+            // onChange={onChange}
+            // value={form.passwordConfirm}
           />
         )}
         {error && <ErrorMessage>{error}</ErrorMessage>}
