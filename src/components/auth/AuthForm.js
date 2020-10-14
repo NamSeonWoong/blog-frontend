@@ -79,7 +79,6 @@ const AuthForm = ({ type, form, onChange, onSubmit, error }) => {
           autoComplete="username"
           name="username"
           placeholder="아이디"
-          type="password"
           onChange={onChange}
           value={form.username}
         />
