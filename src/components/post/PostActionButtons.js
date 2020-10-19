@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import palette from '../../lib/styles/palette';
-// import AskRemoveModal from './AskRemoveModal';
+import AskRemoveModal from './AskRemoveModal';
 
 const PostActionButtonsBlock = styled.div`
   display: flex;
@@ -47,11 +47,11 @@ const PostActionButtons = ({ onEdit, onRemove }) => {
         <ActionButton onClick={onEdit}>수정</ActionButton>
         <ActionButton onClick={onRemoveClick}>삭제</ActionButton>
       </PostActionButtonsBlock>
-      {/* <AskRemoveModal
+      <AskRemoveModal
         visible={modal}
         onConfirm={onConfirm}
         onCancel={onCancel}
-      /> */}
+      />
     </>
   );
 };
